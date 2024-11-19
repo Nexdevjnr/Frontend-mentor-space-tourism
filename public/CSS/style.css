@@ -1,0 +1,64 @@
+.container {
+    background-image: url(../../starter-code/assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+main{
+    color: #9b9fb7;
+    text-align: center;
+    height: 85%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 1rem auto;
+
+
+}
+
+main strong {
+    display: block;
+    font-size: 4.5rem;
+    font-weight: 500;
+    margin: 0.65rem 0;
+    color: white;
+
+}
+
+main p {
+    margin-bottom: 10rem;
+}
+
+.home-btn {
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 50%;
+    width: 50%;
+    height: 25%;
+}
+
+.home-btn__link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 1rem auto;
+    position: relative;
+    top: 40%;
+}
