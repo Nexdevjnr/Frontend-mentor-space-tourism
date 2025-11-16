@@ -1,7 +1,8 @@
 .container {
     position: relative;
     overflow: hidden;
-    font-family: 'Times New Roman', Times, serif
+    min-height: 100dvh;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .hero-image {
@@ -21,6 +22,16 @@
   display: block;
 }
 
+.close-menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-menu-img {
+  width: 1.2rem;
+}
+
 
 .navbar {
   display: flex;
@@ -35,7 +46,8 @@
   flex-direction: column;
   gap: 2rem;
   list-style: none;
-  background-color: blue;
+  background: rgba(11, 13, 23, 0.15);
+  backdrop-filter: blur(30px); 
   width: 65%;
   height: 100vh;
   position: absolute;
@@ -64,7 +76,7 @@
   }
 }
 
-main{
+.home-content{
     color: #9b9fb7;
     text-align: center;
     margin: 1rem;
@@ -72,7 +84,7 @@ main{
     flex-direction: column;
 }
 
-main h1 {
+.home-content h1 {
     font-weight: normal;
     text-transform: uppercase;
     font-size: 1rem;
@@ -81,7 +93,7 @@ main h1 {
 
 }
 
-main strong {
+.home-content strong {
     display: block;
     font-size: 4.5rem;
     font-weight: 500;
@@ -90,7 +102,7 @@ main strong {
 
 }
 
-main p {
+.home-content p {
     margin-bottom: 2rem;
 }
 
@@ -110,4 +122,54 @@ main p {
     color: black;
     font-size: 1rem;
     text-transform: uppercase;
+}
+
+.planet{
+  margin: 1rem;
+}
+
+.planet-img{
+  width: 8rem;
+  height: 8rem;
+}
+
+.destination-content{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.destination-content h1 {
+  font-size: 1rem;
+}
+
+.planet-nav-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.destination-content strong {
+  font-size: 5rem;
+}
+
+.destination-description {
+  line-height: 1.75rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px grey;
+}
+
+.destination-data {
+  text-align: center;
+}
+
+.destination-data span {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
