@@ -1,58 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <link rel="stylesheet" href="../CSS/style.css">
-  <link rel="stylesheet" href="../CSS/reset.css">
-  <script src="/public/script.js" defer></script>
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
-<div class="container">
-  <header>
-  <nav class="navbar">
-    <img src="../../starter-code/assets/shared/logo.svg" alt="logo du site" class="logo">
-    
-    <ul class="nav-links">
-      <li class="close-menu">
-      <img class="close-menu-img" src="../../starter-code/assets/shared/icon-close.svg" alt="fermeture menu">
-      </li>
-      <li><a href="./index.html">00 Home</a></li>
-      <li><a href="./destination-moon.html">01 Destination</a></li>
-      <li><a href="#">02 Crew</a></li>
-      <li><a href="#">03 Technology</a></li>
-    </ul>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../starter-code/assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <script src="/public/script.js" defer></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="container">
+      <picture class="hero-image">
+        <source
+          srcset="
+            ../../starter-code/assets/destination/background-destination-desktop.jpg
+          "
+          media="(min-width:1024px)"
+        />
+        <source
+          srcset="
+            ../../starter-code/assets/destination/background-destination-tablet.jpg
+          "
+          media="(min-width:768px)"
+        />
+        <img
+          src="../../starter-code/assets/destination/background-destination-mobile.jpg"
+          alt="Background space"
+          class="hero-img"
+        />
+      </picture>
 
-    <img src="../../starter-code/assets/shared/icon-hamburger.svg" alt="burger menu" class="hamburger">
-  </nav>
-</header>
+      <header>
+        <nav class="navbar">
+          <img
+            src="../../starter-code/assets/shared/logo.svg"
+            alt="logo du site"
+            class="logo"
+          />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+          <ul class="nav-links">
+            <li class="close-menu">
+              <img
+                class="close-menu-img"
+                src="../../starter-code/assets/shared/icon-close.svg"
+                alt="fermeture menu"
+              />
+            </li>
+            <li><a href="./index.html">00 Home</a></li>
+            <li><a href="./destination-moon.html">01 Destination</a></li>
+            <li><a href="#">02 Crew</a></li>
+            <li><a href="#">03 Technology</a></li>
+          </ul>
 
-  01 Pick your destination
+          <img
+            src="../../starter-code/assets/shared/icon-hamburger.svg"
+            alt="burger menu"
+            class="hamburger"
+          />
+        </nav>
+      </header>
 
-  Moon
-  Mars
-  Europa
-  Titan
+      <main class="destination-content">
+        <h1><span class="number-nav">01</span> Pick your destination</h1>
 
-  Mars
+        <div class="planet">
+          <img
+            class="planet-img"
+            src="../../starter-code/assets/destination/image-mars.png"
+            alt=""
+          />
+        </div>
 
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
+        <ul class="planet-nav-list">
+          <li><a href="./destination-moon.html">Moon</a></li>
+          <li class="active">Mars</li>
+          <li><a href="./destination-europa.html">Europa</a></li>
+          <li><a href="./destination-titan.html">Titan</a></li>
+        </ul>
 
-  Avg. distance
-  225 mil. km
+        <strong>Mars</strong>
 
-  Est. travel time
-  9 months
-</div>
-</body>
+        <p class="destination-description">
+          Don’t forget to pack your hiking boots. You’ll need them to tackle
+          Olympus Mons, the tallest planetary mountain in our solar system. It’s
+          two and a half times the size of Everest!
+        </p>
+
+        <div class="destination-data">
+          <p>Avg. distance</p>
+          <span>225 mil. km</span>
+          <p>Est. travel time</p>
+          <span>9 months</span>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
