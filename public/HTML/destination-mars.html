@@ -16,7 +16,7 @@
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-destination">
       <picture class="hero-image">
         <source
           srcset="
@@ -36,7 +36,6 @@
           class="hero-img"
         />
       </picture>
-
       <header>
         <nav class="navbar">
           <img
@@ -53,10 +52,18 @@
                 alt="fermeture menu"
               />
             </li>
-            <li><a href="./index.html">00 Home</a></li>
-            <li><a href="./destination-moon.html">01 Destination</a></li>
-            <li><a href="#">02 Crew</a></li>
-            <li><a href="#">03 Technology</a></li>
+            <li>
+              <a href="./index.html"><span class="number00">00</span> Home</a>
+            </li>
+            <li class="home-nav">
+              <a href="./destination-moon.html"><span>01</span> Destination</a>
+            </li>
+            <li>
+              <a href="#"><span>02</span> Crew</a>
+            </li>
+            <li>
+              <a href="#"><span>03</span> Technology</a>
+            </li>
           </ul>
 
           <img
@@ -66,38 +73,43 @@
           />
         </nav>
       </header>
-
+      <h1 class="destination-title">
+        <span class="number-nav">01</span> Pick your destination
+      </h1>
       <main class="destination-content">
-        <h1><span class="number-nav">01</span> Pick your destination</h1>
-
         <div class="planet">
           <img
             class="planet-img"
             src="../../starter-code/assets/destination/image-mars.png"
-            alt=""
+            alt="Mars"
           />
         </div>
+        <div class="destination-text-wrap">
+          <ul class="planet-nav-list">
+            <li><a href="./destination-moon.html">Moon</a></li>
+            <li class="active">Mars</li>
+            <li><a href="./destination-europa.html">Europa</a></li>
+            <li><a href="./destination-titan.html">Titan</a></li>
+          </ul>
 
-        <ul class="planet-nav-list">
-          <li><a href="./destination-moon.html">Moon</a></li>
-          <li class="active">Mars</li>
-          <li><a href="./destination-europa.html">Europa</a></li>
-          <li><a href="./destination-titan.html">Titan</a></li>
-        </ul>
+          <strong>Mars</strong>
 
-        <strong>Mars</strong>
+          <p class="destination-description">
+            Don't forget to pack your hiking boots. You'll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It's two and a half times the size of Everest!
+          </p>
 
-        <p class="destination-description">
-          Don’t forget to pack your hiking boots. You’ll need them to tackle
-          Olympus Mons, the tallest planetary mountain in our solar system. It’s
-          two and a half times the size of Everest!
-        </p>
-
-        <div class="destination-data">
-          <p>Avg. distance</p>
-          <span>225 mil. km</span>
-          <p>Est. travel time</p>
-          <span>9 months</span>
+          <div class="destination-data">
+            <div class="distance">
+              <p>Avg. distance</p>
+              <span>225 mil. km</span>
+            </div>
+            <div class="time">
+              <p>Est. travel time</p>
+              <span>9 months</span>
+            </div>
+          </div>
         </div>
       </main>
     </div>

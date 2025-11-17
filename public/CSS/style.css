@@ -1,7 +1,7 @@
 .container {
   position: relative;
   overflow: hidden;
-  min-height: 100dvh;
+  height: 100dvh;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -111,6 +111,25 @@
   text-transform: uppercase;
 }
 
+/* DESTINATION PAGE */
+
+.container-destination {
+  position: relative;
+  overflow: hidden;
+  min-height: 100dvh;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-title {
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
 .planet {
   margin: 1rem;
 }
@@ -127,7 +146,7 @@
   align-items: center;
   gap: 1rem;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .destination-content h1 {
@@ -139,6 +158,23 @@
   display: flex;
   flex-direction: row;
   gap: 2rem;
+}
+
+.planet-nav-list li {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+  font-size: 1.25rem;
+}
+
+.planet-nav-list li.active {
+  border-bottom-color: white;
+  font-size: 1.25rem;
+}
+
+.planet-nav-list li a {
+  text-decoration: none;
+  color: white;
 }
 
 .destination-content strong {
@@ -159,6 +195,21 @@
 .destination-data span {
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+.number-nav {
+  margin-right: 1rem;
+  font-weight: bolder;
+}
+
+.distance {
+  margin-bottom: 1rem;
+}
+
+.destination-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
@@ -242,6 +293,46 @@
 
   .hamburger {
     display: none;
+  }
+
+  /* DESTINATION PAGE */
+
+  .destination-content {
+    padding: 1rem 7rem;
+  }
+
+  .destination-title {
+    text-align: start;
+    margin: 2rem 0rem 0rem 3rem;
+  }
+
+  .number-nav {
+    color: #9b9fb7;
+  }
+
+  .destination-content strong {
+    font-size: 6rem;
+  }
+
+  .destination-description {
+    font-size: 1.1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .planet-img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .planet-nav-list {
+    margin-top: 1.6rem;
+  }
+
+  .destination-data {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    margin-top: 1rem;
   }
 }
 
@@ -340,6 +431,54 @@
 
   .hamburger {
     display: none;
+  }
+
+  /* destination page */
+
+  .destination-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8rem;
+    padding-top: 4rem;
+  }
+
+  .destination-title {
+    text-align: start;
+    margin: 0 10rem;
+    font-size: 2rem;
+  }
+
+  .destination-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+  }
+
+  .destination-description {
+    text-align: start;
+    padding-bottom: 2rem;
+  }
+
+  .planet-img {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .destination-data {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    text-align: start;
+  }
+
+  .destination-data span {
+    font-size: 1.5rem;
+  }
+
+  .number-nav {
+    color: #9b9fb7;
   }
 }
 
@@ -440,6 +579,47 @@
   .hamburger {
     display: none;
   }
+
+  /* destination page */
+
+  .destination-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8rem;
+    padding-top: 4rem;
+  }
+
+  .destination-title {
+    text-align: start;
+    margin: 0 10rem;
+    font-size: 2.4rem;
+  }
+
+  .destination-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+  }
+
+  .destination-description {
+    text-align: start;
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+  }
+
+  .planet-img {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .destination-data {
+    margin-top: 2rem;
+    display: flex;
+    gap: 8rem;
+    text-align: start;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -539,5 +719,51 @@
 
   .hamburger {
     display: none;
+  }
+
+  /* destination page */
+
+  .destination-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 17rem;
+    padding-top: 4rem;
+  }
+
+  .destination-title {
+    text-align: start;
+    margin: 0 10rem;
+    font-size: 2.7rem;
+  }
+
+  .destination-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+  }
+
+  .destination-description {
+    text-align: start;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+  }
+
+  .planet-img {
+    width: 27rem;
+    height: 27rem;
+  }
+
+  .destination-data {
+    margin-top: 2rem;
+    display: flex;
+    gap: 8rem;
+    text-align: start;
+    font-size: 1.5rem;
+  }
+
+  .destination-data span {
+    font-size: 2.5rem;
   }
 }
