@@ -8,30 +8,26 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../starter-code/assets/favicon-32x32.png"
+      href="../assets/favicon-32x32.png"
     />
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/reset.css" />
-    <script src="/public/script.js" defer></script>
+    <script src="../main.js" defer></script>
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
     <div class="container-destination">
       <picture class="hero-image">
         <source
-          srcset="
-            ../../starter-code/assets/destination/background-destination-desktop.jpg
-          "
+          srcset="../assets/destination/background-destination-desktop.jpg"
           media="(min-width:1024px)"
         />
         <source
-          srcset="
-            ../../starter-code/assets/destination/background-destination-tablet.jpg
-          "
+          srcset="../assets/destination/background-destination-tablet.jpg"
           media="(min-width:768px)"
         />
         <img
-          src="../../starter-code/assets/destination/background-destination-mobile.jpg"
+          src="../assets/destination/background-destination-mobile.jpg"
           alt="Background space"
           class="hero-img"
         />
@@ -39,7 +35,7 @@
       <header>
         <nav class="navbar">
           <img
-            src="../../starter-code/assets/shared/logo.svg"
+            src="../assets/shared/logo.svg"
             alt="logo du site"
             class="logo"
           />
@@ -48,7 +44,7 @@
             <li class="close-menu">
               <img
                 class="close-menu-img"
-                src="../../starter-code/assets/shared/icon-close.svg"
+                src="../assets/shared/icon-close.svg"
                 alt="fermeture menu"
               />
             </li>
@@ -67,7 +63,7 @@
           </ul>
 
           <img
-            src="../../starter-code/assets/shared/icon-hamburger.svg"
+            src="../assets/shared/icon-hamburger.svg"
             alt="burger menu"
             class="hamburger"
           />
@@ -80,34 +76,35 @@
         <div class="planet">
           <img
             class="planet-img"
-            src="../../starter-code/assets/destination/image-titan.png"
-            alt="Titan"
+            src="../assets/destination/image-europa.png"
+            alt="Europa"
           />
         </div>
         <div class="destination-text-wrap">
           <ul class="planet-nav-list">
             <li><a href="./destination-moon.html">Moon</a></li>
             <li><a href="./destination-mars.html">Mars</a></li>
-            <li><a href="./destination-europa.html">Europa</a></li>
-            <li class="active">Titan</li>
+            <li class="active">Europa</li>
+            <li><a href="./destination-titan.html">Titan</a></li>
           </ul>
 
-          <strong>Titan</strong>
+          <strong>Europa</strong>
 
           <p class="destination-description">
-            The only moon known to have a dense atmosphere other than Earth,
-            Titan is a home away from home (just a few hundred degrees colder!).
-            As a bonus, you get striking views of the Rings of Saturn.
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is
+            a winter lover's dream. With an icy surface, it's perfect for a bit
+            of ice skating, curling, hockey, or simple relaxation in your snug
+            wintery cabin.
           </p>
 
           <div class="destination-data">
             <div class="distance">
               <p>Avg. distance</p>
-              <span>1.6 bil. km</span>
+              <span>628 mil. km</span>
             </div>
             <div class="time">
               <p>Est. travel time</p>
-              <span>7 years</span>
+              <span>3 years</span>
             </div>
           </div>
         </div>

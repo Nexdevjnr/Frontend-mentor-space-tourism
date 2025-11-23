@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../main.js" defer></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="tech-container">
+      <picture class="hero-image">
+        <source
+          srcset="../assets/technology/background-technology-desktop.jpg"
+          media="(min-width:1024px)"
+        />
+        <source
+          srcset="../assets/technology/background-technology-tablet.jpg"
+          media="(min-width:768px)"
+        />
+        <img
+          src="../assets/technology/background-technology-mobile.jpg"
+          alt="Background space"
+          class="hero-img"
+        />
+      </picture>
+
+      <header>
+        <nav class="navbar">
+          <img
+            src="../assets/shared/logo.svg"
+            alt="logo du site"
+            class="logo"
+          />
+
+          <ul class="nav-links">
+            <li class="close-menu">
+              <img
+                class="close-menu-img"
+                src="../assets/shared/icon-close.svg"
+                alt="fermeture menu"
+              />
+            </li>
+            <li>
+              <a href="./index.html"><span class="number00">00</span> Home</a>
+            </li>
+            <li>
+              <a href="./destination-moon.html"><span>01</span> Destination</a>
+            </li>
+            <li>
+              <a href="./crew-commander.html"><span>02</span> Crew</a>
+            </li>
+            <li class="home-nav">
+              <a href="./technology-spaceport.html"
+                ><span>03</span> Technology</a
+              >
+            </li>
+          </ul>
+
+          <img
+            src="../assets/shared/icon-hamburger.svg"
+            alt="burger menu"
+            class="hamburger"
+          />
+        </nav>
+      </header>
+
+      <h1 class="tech-title">
+        <span class="number-nav">03</span> Space launch 101
+      </h1>
+
+      <div class="tech-wrapper">
+        <picture class="tech-img-wrapper">
+          <source
+            srcset="../assets/technology/image-spaceport-portrait.jpg"
+            media="(min-width:1024px)"
+          />
+          <source
+            srcset="../assets/technology/image-spaceport-landscape.jpg"
+            media="(min-width:768px)"
+          />
+          <img
+            class="tech-img"
+            src="../assets/technology/image-spaceport-portrait.jpg"
+            alt=""
+          />
+        </picture>
+        <div class="tech-desk-wrapper">
+          <nav class="tech-nav">
+            <button class="tech-nav-link tech-nav-link-active">1</button>
+            <button class="tech-nav-link">2</button>
+            <button class="tech-nav-link">3</button>
+          </nav>
+          <div class="tech-content-wrapper">
+            <h2>The terminology...<br /><strong>Spaceport</strong></h2>
+            <p>
+              A spaceport or cosmodrome is a site for launching (or receiving)
+              spacecraft, by analogy to the seaport for ships or airport for
+              aircraft. Based in the famous Cape Canaveral, our spaceport is
+              ideally situated to take advantage of the Earth’s rotation for
+              launch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

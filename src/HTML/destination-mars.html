@@ -8,30 +8,26 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../starter-code/assets/favicon-32x32.png"
+      href="../assets/favicon-32x32.png"
     />
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/reset.css" />
-    <script src="/public/script.js" defer></script>
+    <script src="../main.js" defer></script>
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
     <div class="container-destination">
       <picture class="hero-image">
         <source
-          srcset="
-            ../../starter-code/assets/destination/background-destination-desktop.jpg
-          "
+          srcset="../assets/destination/background-destination-desktop.jpg"
           media="(min-width:1024px)"
         />
         <source
-          srcset="
-            ../../starter-code/assets/destination/background-destination-tablet.jpg
-          "
+          srcset="../assets/destination/background-destination-tablet.jpg"
           media="(min-width:768px)"
         />
         <img
-          src="../../starter-code/assets/destination/background-destination-mobile.jpg"
+          src="../assets/destination/background-destination-mobile.jpg"
           alt="Background space"
           class="hero-img"
         />
@@ -39,7 +35,7 @@
       <header>
         <nav class="navbar">
           <img
-            src="../../starter-code/assets/shared/logo.svg"
+            src="../assets/shared/logo.svg"
             alt="logo du site"
             class="logo"
           />
@@ -48,7 +44,7 @@
             <li class="close-menu">
               <img
                 class="close-menu-img"
-                src="../../starter-code/assets/shared/icon-close.svg"
+                src="../assets/shared/icon-close.svg"
                 alt="fermeture menu"
               />
             </li>
@@ -67,7 +63,7 @@
           </ul>
 
           <img
-            src="../../starter-code/assets/shared/icon-hamburger.svg"
+            src="../assets/shared/icon-hamburger.svg"
             alt="burger menu"
             class="hamburger"
           />
@@ -80,35 +76,34 @@
         <div class="planet">
           <img
             class="planet-img"
-            src="../../starter-code/assets/destination/image-moon.webp"
-            alt="Lune"
+            src="../assets/destination/image-mars.png"
+            alt="Mars"
           />
         </div>
         <div class="destination-text-wrap">
           <ul class="planet-nav-list">
-            <li class="active">Moon</li>
-            <li><a href="./destination-mars.html">Mars</a></li>
+            <li><a href="./destination-moon.html">Moon</a></li>
+            <li class="active">Mars</li>
             <li><a href="./destination-europa.html">Europa</a></li>
             <li><a href="./destination-titan.html">Titan</a></li>
           </ul>
 
-          <strong>Moon</strong>
+          <strong>Mars</strong>
 
           <p class="destination-description">
-            See our planet as you’ve never seen it before. A perfect relaxing
-            trip away to help regain perspective and come back refreshed. While
-            you’re there, take in some history by visiting the Luna 2 and Apollo
-            11 landing sites.
+            Don't forget to pack your hiking boots. You'll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It's two and a half times the size of Everest!
           </p>
 
           <div class="destination-data">
             <div class="distance">
               <p>Avg. distance</p>
-              <span>384,400 km</span>
+              <span>225 mil. km</span>
             </div>
             <div class="time">
               <p>Est. travel time</p>
-              <span>3 days</span>
+              <span>9 months</span>
             </div>
           </div>
         </div>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <script src="../main.js" defer></script>
+    <script src="../js/crew.js" defer></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="crew-container">
+      <picture class="hero-image">
+        <source
+          srcset="../assets/crew/background-crew-desktop.jpg"
+          media="(min-width:1024px)"
+        />
+        <source
+          srcset="../assets/crew/background-crew-tablet.jpg"
+          media="(min-width:768px)"
+        />
+        <img
+          src="../assets/crew/background-crew-mobile.jpg"
+          alt="Background space"
+          class="hero-img"
+        />
+      </picture>
+      <header>
+        <nav class="navbar">
+          <img
+            src="../assets/shared/logo.svg"
+            alt="logo du site"
+            class="logo"
+          />
+
+          <ul class="nav-links">
+            <li class="close-menu">
+              <img
+                class="close-menu-img"
+                src="../assets/shared/icon-close.svg"
+                alt="fermeture menu"
+              />
+            </li>
+            <li>
+              <a href="./index.html"><span class="number00">00</span> Home</a>
+            </li>
+            <li>
+              <a href="./destination-moon.html"><span>01</span> Destination</a>
+            </li>
+            <li class="home-nav">
+              <a href="./crew-commander.html"><span>02</span> Crew</a>
+            </li>
+            <li>
+              <a href="./technology-spaceport.html"
+                ><span>03</span> Technology</a
+              >
+            </li>
+          </ul>
+
+          <img
+            src="../assets/shared/icon-hamburger.svg"
+            alt="burger menu"
+            class="hamburger"
+          />
+        </nav>
+      </header>
+
+      <h1 class="crew-title">
+        <span class="number-nav">02</span> Meet your crew
+      </h1>
+      <main class="crew-content">
+        <div class="crew-content-wrapper">
+          <strong class="member-role"></strong>
+          <h2 class="member-name"></h2>
+          <p class="member-bio"></p>
+          <nav class="crew-nav">
+            <button
+              class="crew-nav-btn active"
+              aria-label="Crew member 1"
+            ></button>
+            <button class="crew-nav-btn" aria-label="Crew member 2"></button>
+            <button class="crew-nav-btn" aria-label="Crew member 3"></button>
+            <button class="crew-nav-btn" aria-label="Crew member 4"></button>
+          </nav>
+        </div>
+        <div class="image-container">
+          <img class="member-img" />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
