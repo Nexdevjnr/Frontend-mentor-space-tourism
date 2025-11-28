@@ -1,4 +1,5 @@
 let crewMembers = [];
+const navButtons = document.querySelectorAll(".crew-nav-btn");
 
 async function loadCrew() {
   const res = await fetch("../data.json");
@@ -12,7 +13,6 @@ function displayCrew(index) {
   document.querySelector(".member-role").textContent = member.role;
   document.querySelector(".member-name").textContent = member.name;
   document.querySelector(".member-bio").textContent = member.bio;
-  const navButtons = document.querySelectorAll(".crew-nav-btn");
 
   navButtons.forEach((btn, i) => {
     btn.classList.toggle("active", i === index);
@@ -22,8 +22,6 @@ function displayCrew(index) {
   img.src = "../" + member.images.webp.substring(2);
   img.alt = `${member.role} ${member.name}`;
 }
-
-const navButtons = document.querySelectorAll(".crew-nav-btn");
 
 navButtons.forEach((btn, index) => {
   btn.addEventListener("click", () => {
