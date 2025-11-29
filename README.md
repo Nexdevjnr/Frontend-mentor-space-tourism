@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - GitHub Repository: [github.com/Nexdevjnr/Frontend-mentor-space-tourism](https://github.com/Nexdevjnr/Frontend-mentor-space-tourism)
-- Live Site URL: _Coming soon_
+- Live Site URL: [https://frontend-mentor-space-tourism-leok.vercel.app/](https://frontend-mentor-space-tourism-leok.vercel.app/)
 
 ## My Process
 
