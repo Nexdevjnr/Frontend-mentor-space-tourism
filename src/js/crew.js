@@ -2,7 +2,7 @@ let crewMembers = [];
 const navButtons = document.querySelectorAll(".crew-nav-btn");
 
 async function loadCrew() {
-  const res = await fetch("../data.json");
+  const res = await fetch("/src/data.json");
   const data = await res.json();
   crewMembers = data.crew;
   displayCrew(0);
@@ -19,7 +19,7 @@ function displayCrew(index) {
   });
 
   const img = document.querySelector(".member-img");
-  img.src = "../" + member.images.webp.substring(2);
+  img.src = "/src/" + member.images.webp.substring(2);
   img.alt = `${member.role} ${member.name}`;
 }
 
