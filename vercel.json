@@ -1,5 +1,11 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "src/HTML",
-  "cleanUrls": true
+  "rewrites": [
+    { "source": "/CSS/(.*)", "destination": "/src/CSS/$1" },
+    { "source": "/assets/(.*)", "destination": "/src/assets/$1" },
+    { "source": "/js/(.*)", "destination": "/src/js/$1" },
+    { "source": "/main.js", "destination": "/src/main.js" },
+    { "source": "/(.*)", "destination": "/src/HTML/$1" }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
 }
