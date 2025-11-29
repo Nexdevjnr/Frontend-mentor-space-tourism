@@ -25,8 +25,8 @@ nav,
 
 .container {
   position: relative;
-  overflow: hidden;
-  height: 100dvh;
+  overflow: auto;
+  min-height: 100dvh;
 }
 
 .hero-image {
@@ -54,6 +54,7 @@ nav,
 
 .close-menu-img {
   width: 1.2rem;
+  margin-right: 2rem;
 }
 
 .navbar {
@@ -77,13 +78,15 @@ nav,
   top: 0;
   right: 0;
   z-index: 10;
-  padding: 2rem;
+  padding: 2rem 0;
 }
+
 
 .nav-links li a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  margin-left: 2rem;
 }
 
 .hamburger {
@@ -376,6 +379,11 @@ nav,
   .hamburger {
     display: block;
   }
+
+  .home-nav {
+    border-right: solid 3px white;;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
